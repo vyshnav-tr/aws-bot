@@ -1,0 +1,10 @@
+ros2 run aruco_opencv aruco_tracker_autostart --ros-args -p cam_base_topic:=/kinect_camera/image_raw -p marker_size:=0.15
+
+ros2 run opennav_docking opennav_docking --ros-args \
+  --params-file /home/vyshnav-si3514/Documents/aws_bot/src/robot_description/params/docking_server.yaml \
+  -p use_sim_time:=true
+
+ros2 action send_goal /dock_robot opennav_docking_msgs/action/DockRobot "{dock_id: 'my_dock', navigate_to_staging_pose: true}"
+
+
+ros2 action send_goal /undock_robot opennav_docking_msgs/action/UndockRobot "{dock_type: 'aruco_dock'}"

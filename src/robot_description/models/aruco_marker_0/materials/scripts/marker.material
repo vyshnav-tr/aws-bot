@@ -1,0 +1,14 @@
+material ArucoMarker0/Marker
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture marker.png
+        filtering trilinear
+      }
+    }
+  }
+}

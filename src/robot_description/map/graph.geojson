@@ -1,0 +1,48 @@
+{
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:EPSG::3857"
+    }
+  },
+  "type": "FeatureCollection",
+  "name": "graph",
+  "features": [
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [ -0.762, -1.763 ] }, "properties": { "frame": "map", "id": 0, "name": "start", "kind": "start" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 0.916, 3.628 ] }, "properties": { "frame": "map", "id": 2, "name": "center" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [ -5.954, 9.28 ] }, "properties": { "frame": "map", "id": 3, "name": "in_top" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [ -5.123, -7.773 ] }, "properties": { "frame": "map", "id": 4, "name": "in_bot" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 0.831, 7.495 ] }, "properties": { "frame": "map", "id": 5, "name": "out_top" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 0.996, -9.088 ] }, "properties": { "frame": "map", "id": 6, "name": "out_bot" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [ 5.74, 2.144 ] }, "properties": { "frame": "map", "id": 7, "name": "goal", "kind": "goal" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [ -3.546, -1.727 ] }, "properties": { "frame": "map", "id": 8, "name": "node_8" } },
+    { "type": "Feature", "geometry": { "type": "Point", "coordinates": [ -3.669, 9.338 ] }, "properties": { "frame": "map", "id": 9, "name": "node_9" } },
+
+    { "type": "Feature", "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -0.762, -1.763 ], [ 0.916, 3.628 ] ] ] }, "properties": { "id": 12, "startid": 0, "endid": 2, "cost": 0, "overridable": true, "metadata": { "penalty": 38.03, "speed_limit": 60.0 } } },
+    { "type": "Feature", "geometry": { "type": "MultiLineString", "coordinates": [ [ [ 0.916, 3.628 ], [ -0.762, -1.763 ] ] ] }, "properties": { "id": 13, "startid": 2, "endid": 0, "cost": 0, "overridable": true, "metadata": { "penalty": 38.03, "speed_limit": 60.0 } } },
+
+    { "type": "Feature", "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -0.762, -1.763 ], [ -5.123, -7.773 ] ] ] }, "properties": { "id": 14, "startid": 0, "endid": 4, "cost": 0, "overridable": true, "metadata": { "penalty": 36.1, "speed_limit": 60.0 } } },
+    { "type": "Feature", "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -5.123, -7.773 ], [ -0.762, -1.763 ] ] ] }, "properties": { "id": 15, "startid": 4, "endid": 0, "cost": 0, "overridable": true, "metadata": { "penalty": 36.1, "speed_limit": 60.0 } } },
+
+    { "type": "Feature", "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -5.123, -7.773 ], [ 0.916, 3.628 ] ] ] }, "properties": { "id": 18, "startid": 4, "endid": 2, "cost": 0, "overridable": true, "metadata": { "penalty": 21.81, "speed_limit": 60.0 } } },
+    { "type": "Feature", "geometry": { "type": "MultiLineString", "coordinates": [ [ [ 0.916, 3.628 ], [ -5.123, -7.773 ] ] ] }, "properties": { "id": 19, "startid": 2, "endid": 4, "cost": 0, "overridable": true, "metadata": { "penalty": 21.81, "speed_limit": 60.0 } } },
+
+    { "type": "Feature", "geometry": { "type": "MultiLineString", "coordinates": [ [ [ 0.916, 3.628 ], [ 0.831, 7.495 ] ] ] }, "properties": { "id": 20, "startid": 2, "endid": 5, "cost": 0, "overridable": true, "metadata": { "penalty": 0.97, "speed_limit": 60.0 } } },
+    { "type": "Feature", "geometry": { "type": "MultiLineString", "coordinates": [ [ [ 0.831, 7.495 ], [ 0.916, 3.628 ] ] ] }, "properties": { "id": 21, "startid": 5, "endid": 2, "cost": 0, "overridable": true, "metadata": { "penalty": 0.97, "speed_limit": 60.0 } } },
+
+    { "type": "Feature", "geometry": { "type": "MultiLineString", "coordinates": [ [ [ 0.916, 3.628 ], [ 0.996, -9.088 ] ] ] }, "properties": { "id": 22, "startid": 2, "endid": 6, "cost": 0, "overridable": true, "metadata": { "penalty": 1.95, "speed_limit": 60.0 } } },
+    { "type": "Feature", "geometry": { "type": "MultiLineString", "coordinates": [ [ [ 0.996, -9.088 ], [ 0.916, 3.628 ] ] ] }, "properties": { "id": 23, "startid": 6, "endid": 2, "cost": 0, "overridable": true, "metadata": { "penalty": 1.95, "speed_limit": 60.0 } } },
+
+    { "type": "Feature", "geometry": { "type": "MultiLineString", "coordinates": [ [ [ 0.996, -9.088 ], [ 5.74, 2.144 ] ] ] }, "properties": { "id": 28, "startid": 6, "endid": 7, "cost": 0, "overridable": true } },
+    { "type": "Feature", "geometry": { "type": "MultiLineString", "coordinates": [ [ [ 5.74, 2.144 ], [ 0.996, -9.088 ] ] ] }, "properties": { "id": 29, "startid": 7, "endid": 6, "cost": 0, "overridable": true } },
+
+    { "type": "Feature", "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -3.546, -1.727 ], [ -3.669, 9.338 ] ] ] }, "properties": { "id": 30, "startid": 8, "endid": 9, "cost": 0, "overridable": true, "metadata": { "penalty": 11.07, "speed_limit": 60.0 } } },
+    { "type": "Feature", "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -3.669, 9.338 ], [ -3.546, -1.727 ] ] ] }, "properties": { "id": 31, "startid": 9, "endid": 8, "cost": 0, "overridable": true, "metadata": { "penalty": 11.07, "speed_limit": 60.0 } } },
+
+    { "type": "Feature", "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -5.954, 9.28 ], [ -3.669, 9.338 ] ] ] }, "properties": { "id": 32, "startid": 3, "endid": 9, "cost": 0, "overridable": true, "metadata": { "penalty": 2.29, "speed_limit": 60.0 } } },
+    { "type": "Feature", "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -3.669, 9.338 ], [ -5.954, 9.28 ] ] ] }, "properties": { "id": 33, "startid": 9, "endid": 3, "cost": 0, "overridable": true, "metadata": { "penalty": 2.29, "speed_limit": 60.0 } } },
+
+    { "type": "Feature", "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -0.762, -1.763 ], [ -3.546, -1.727 ] ] ] }, "properties": { "id": 34, "startid": 0, "endid": 8, "cost": 0, "overridable": true, "metadata": { "penalty": 2.78, "speed_limit": 60.0 } } },
+    { "type": "Feature", "geometry": { "type": "MultiLineString", "coordinates": [ [ [ -3.546, -1.727 ], [ -0.762, -1.763 ] ] ] }, "properties": { "id": 35, "startid": 8, "endid": 0, "cost": 0, "overridable": true, "metadata": { "penalty": 2.78, "speed_limit": 60.0 } } }
+  ]
+}

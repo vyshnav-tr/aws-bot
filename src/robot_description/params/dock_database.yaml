@@ -1,0 +1,5 @@
+docks:
+  my_dock:
+    type: "aruco_dock"
+    frame: "map"
+    pose: [0.55, -4.80, 0.0]

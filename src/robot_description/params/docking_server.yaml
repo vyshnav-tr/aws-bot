@@ -1,0 +1,42 @@
+docking_server:
+  ros__parameters:
+    use_sim_time: true
+    controller_frequency: 50.0
+    initial_perception_timeout: 5.0
+    dock_approach_timeout: 30.0
+    undock_linear_tolerance: 0.05
+    undock_angular_tolerance: 0.1
+    max_retries: 3
+    base_frame: "base_link"
+    fixed_frame: "odom"
+    odom_topic: "odom"
+    dock_backwards: false
+    dock_prestaging_tolerance: 0.3
+
+    dock_plugins: ['aruco_dock']
+    aruco_dock:
+      plugin: 'opennav_docking::SimpleChargingDock'
+      docking_threshold: 0.33
+      staging_x_offset: -1.0
+      use_external_detection_pose: true
+      use_battery_status: false
+      use_stall_detection: false
+      external_detection_timeout: 1.0
+      external_detection_translation_x: -0.33
+      external_detection_translation_y: 0.0
+      external_detection_rotation_roll: -1.57
+      external_detection_rotation_pitch: 1.57
+      external_detection_rotation_yaw: 0.0
+      filter_coef: 0.1
+
+    controller:
+      k_phi: 3.0
+      k_delta: 2.0
+      v_linear_min: 0.1
+      v_linear_max: 0.3
+      v_angular_max: 0.25
+      slowdown_radius: 0.5
+      use_collision_detection: false
+      dock_collision_threshold: 0.3
+
+    dock_database: "/home/vyshnav-si3514/Documents/aws_bot/src/robot_description/params/dock_database.yaml"

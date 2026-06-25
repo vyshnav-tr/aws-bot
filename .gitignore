@@ -1,0 +1,40 @@
+# ==========================================
+# ROS 2 Build & Install Artifacts
+# ==========================================
+build/
+install/
+log/
+
+# ==========================================
+# Python & Bytecode
+# ==========================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ==========================================
+# C++ / Build Tool Artifacts
+# ==========================================
+*.o
+*.a
+*.so
+*.dylib
+.cmake/
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+
+# ==========================================
+# IDEs and Editors
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
