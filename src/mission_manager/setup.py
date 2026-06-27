@@ -31,6 +31,7 @@ setup(
         'console_scripts': [
             'battery_node = mission_manager.battery_node:main',
             'auto_dock = mission_manager.auto_docking_node:main',
+            'follow_robot = mission_manager.final_person_follower:main',
 
         ],
     },
